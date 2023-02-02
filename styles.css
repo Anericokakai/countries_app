@@ -223,6 +223,7 @@ height: 30px;
     color: hsl(0, 0%, 100%);
 }
 .darkmode {
+    color:hsl(0, 0%, 100%) ;
     background-color: hsl(207, 26%, 17%);
 }
 .darkmode .bar{
@@ -251,4 +252,16 @@ color: hsl(0, 0%, 100%);
 .container a{
     text-decoration: none;
     color: black;
+}
+
+@media (max-width:500px) {
+    .domain{
+        padding-left: 0;
+    }
+    
+}
+.domain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
