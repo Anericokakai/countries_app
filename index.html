@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>countries app</title>
+  </head>
+  <link rel="stylesheet" href="./styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  /><link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,400;1,500;1,600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,700;1,100&display=swap"
+    rel="stylesheet"
+  />
+  <body>
+    <section class="home">
+      <div class="bar">
+        <h3>where in the country</h3>
+        <div class="mode">
+          <i class="fa-solid fa-moon"></i>
+          <p>dark mode</p>
+        </div>
+      </div>
+      <div class="search">
+        <form method="get" action="each.html" >
+        <input type="text" name="country" class="result" placeholder="  search for a country" />
+        <button type="submit" class="submit"><i class="fa-solid fa-search"></i> </button>
+    </form>
+        <select name="" id="continent" class="selections">
+          <option value="none" selected disabled hidden>
+            select by region
+          </option>
+          <div class="optn">
+          <option value="" >africa</option>
+          <option value="">america</option>
+          <option value="">asia</option>
+          <option value="">europe</option>
+          <option value="">oceania</option>
+        </div>
+        </select>
+      </div>
+
+      <div class="container">
+        <div class="eachcounrty">
+          <div class="image">
+            <img src="./pexels-mike-b-3589586.jpg" alt="" />
+          </div>
+          <div class="details">
+            <h3 class="header"><strong>germany</strong></h3>
+            <p><strong> population: </strong>81,0000</p>
+            <p><strong>region: </strong> europe</p>
+            <p><strong>capital: </strong> berlin</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="index.js"></script>
+  
+</html>

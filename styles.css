@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background-color:rgb(229, 233, 236)
+}
+.bar{
+    display: flex;
+    justify-content: space-between;
+    background-color:  #ffff;;
+    height: 70px;
+    align-items: center;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.192);
+    padding-right: 30px;
+}
+.bar h3{
+    color: black;
+    padding-left: 20px;
+}
+
+.mode{
+    display: flex;
+    cursor: pointer;
+}
+.mode i{
+    padding-right: 7px;
+    font-size: 25px;
+}
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    flex-wrap: wrap;
+    
+
+}
+.search input{
+    width: 300px;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 5px;
+    border: 1px solid grey;
+    outline: none;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+@media (max-width:414px) {
+    .search input{
+        width: 170px;
+    }
+    .bar h3{
+        font-size: 16px;
+    }
+    .mode i{
+        margin-top: 5px;
+        font-size: 16px;
+    }
+    .mode p{
+        width: max-content;
+    }
+    .flag{
+        max-height: 150px;
+        min-width: 270px;
+    }
+    
+}
+
+select{
+    appearance: none;
+}
+
+
+
+.submit{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.selections{
+    width:220px ;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+    outline: none;
+    height: 30px;
+   
+   
+    
+
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 50px;
+}
+.eachcounrty{
+    width: 250px;
+    margin-bottom: 30px;
+    background-color: #ffff;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.274);
+}
+.eachcounrty .image{
+    width: 100%;
+
+}
+.eachcounrty .image img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 150px;
+}
+.header{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.details p{
+    padding-left: 20px;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+}
+strong{
+    padding-right: 5px;
+}
+
+
+/* each css */
+
+.back{
+    width: 100px;
+    margin-top: 5em;
+    margin-left: 3em;
+    padding: 4px 0;
+    cursor: pointer;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #ffff;
+    transition: .5s ease-in;
+}
+.back:hover{
+    background-color: rgb(40,40,50);
+    color: white;
+    transform: translateY(-2px);
+}
+.back i{
+    padding-right: 7px;
+    font-size: 18px;
+}
+
+.flag{
+    width: 366px;
+    height: 250px;
+   
+}
+.flag img{
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.509);
+
+}
+.countrydetails{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    min-height: 350px;
+}
+.domain{
+    padding-left: 3em;
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+.countrydetails h2{
+    padding-bottom: 1em ;
+    padding-left: .5em;
+}
+
+.border{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+}
+.border .back{
+    margin-top: 0;
+    padding: 0 10px;
+height: 30px;
+    font-size: 13px;
+    width: 100px;
+}
+.container2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 50px;
+}
+
+/* darkmode */
+
+.darkmode .eachcounrty{
+    background-color:hsl(209, 23%, 22%) ;
+    color: hsl(0, 0%, 100%);
+}
+.darkmode {
+    background-color: hsl(207, 26%, 17%);
+}
+.darkmode .bar{
+    background-color:hsl(209, 23%, 22%) ;
+    color: hsl(0, 0%, 100%);
+}
+.darkmode .bar h3{
+    color: hsl(0, 0%, 100%);
+}
+.darkmode .result{
+    background-color: hsl(209, 23%, 22%);
+    border: none;
+
+}
+.darkmode input::placeholder{
+    color:hsl(0, 0%, 100%) ;
+}
+.darkmode .submit{
+
+    background-color: hsl(209, 23%, 22%);
+}
+.darkmode .submit i{
+color: hsl(0, 0%, 100%);
+}
+
+.container a{
+    text-decoration: none;
+    color: black;
+}
